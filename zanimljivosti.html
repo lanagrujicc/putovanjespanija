@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./images/travellogo.png" />
+    <title>PUTOVANJA PO ŠPANIJI</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><img src="./images/travellogo.png" alt="Logo"></h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Pocetna</a></li>
+            <li><a href="destinacije.html">Destinacije</a></li>
+            <li><a href="#">Zanimljivosti</a></li>
+            <li><a  href="kontakt.html">Kontakt</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./images/img-menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Istražite sa nama Španiju</h2>
+            <div class="line"></div>
+            <h1>PRELEPA DRŽAVA</h1>
+            <a href="#" class="ctn">Saznajte vise</a>
+        </div>
+    </header>
+
+    <section id="zanimljivosti">
+        <div class="row">
+            <img src="./images/sagrada.jpg" alt="">
+            <div class="col">
+                <h1>SAGRADA FAMILIA</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur temporibus id quis voluptate reprehenderit.
+                 Dolor ipsa dolorem officiis eum quisquam hic assumenda saepe! Blanditiis atque dolore odio, inventore iusto recusandae.</p>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>PARK GUEL</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur temporibus id quis voluptate reprehenderit.
+                 Dolor ipsa dolorem officiis eum quisquam hic assumenda saepe! Blanditiis atque dolore odio, inventore iusto recusandae.</p>
+            </div>
+            <img src="./images/guel.jpg" alt="">
+            
+        </div>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>

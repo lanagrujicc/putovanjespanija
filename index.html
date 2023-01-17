@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/travellogo.png" />
+    <title>PUTOVANJA PO ŠPANIJI</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo"><img src="./images/travellogo.png" alt="Logo"></h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Pocetna</a></li>
+            <li><a href="destinacije.html">Destinacije</a></li>
+            <li><a href="zanimljivosti.html">Zanimljivosti</a></li>
+            <li><a  href="kontakt.html">Kontakt</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./images/img-menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Istražite sa nama Španiju</h2>
+            <div class="line"></div>
+            <h1>PRELEPA DRŽAVA</h1>
+            <a href="#" class="ctn">Saznajte vise</a>
+        </div>
+    </header>
+
+        <h3>
+        „PUTOVANJA VAS PRVO OSTAVE BEZ REČI,
+        A ONDA VAS PRETVORE U PRIPOVEDAČA.“ <br> <br> <i> Ibn Batuta </i></h3> 
+        <hr/>
+
+        <section class="blog">
+            <h1>BLOG:<br>
+                PUTOVANJA KROZ ŠPANIJU
+            </h1>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum veniam possimus nobis quidem, consequuntur provident.
+                 Aut ducimus temporibus accusamus voluptate, est tenetur quo excepturi! Natus mollitia illum est suscipit.
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum veniam possimus nobis quidem, consequuntur provident.
+                 Aut ducimus temporibus accusamus voluptate, est tenetur quo excepturi! Natus mollitia illum est suscipit.
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum veniam possimus nobis quidem, consequuntur provident.
+                 Aut ducimus temporibus accusamus voluptate, est tenetur quo excepturi! Natus mollitia illum est suscipit.
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum veniam possimus nobis quidem, consequuntur provident.
+                 Aut ducimus temporibus accusamus voluptate, est tenetur quo excepturi! Natus mollitia illum est suscipit.</p>
+        </section>
+        <hr/>
+
+        <section class="tour">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>SLEDECE DESTINACIJE I TURE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo dignissimos eius quidem culpa, beatae quasi ea cum minima reiciendis ut molestiae consequuntur doloribus aperiam neque eaque, at placeat natus.</p>
+                    <a href="zanimljivnosti.html" class="ctn">Saznajte vise</a>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="./images/1index.jpg" alt="1">
+                        <img src="./images/3index.jpg" alt="2">
+                        <img src="./images/4index.jpg" alt="3">
+                        <img src="./images/5index.jpg" alt="4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Novi Sad | Phone: 000-000-000 | Email: example@example.com</p>
+            
+        </section>
+    
+        <script>
+            const mobileNav = document.querySelector('.mobile-nav')
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+            const closeBtn = document.querySelector('.close-btn')
+    
+            mobileNav.addEventListener('click',(e)=>{
+                navlinks.classList.toggle('mobile-menu')
+                if(e.target === menuBtn){
+                    menuBtn.replaceWith(closeBtn)
+                    closeBtn.style.display = 'block'
+                }
+                if(e.target === closeBtn){
+                    closeBtn.replaceWith(menuBtn)
+                }
+            })
+        </script>
+    
+</body>
+</html>
